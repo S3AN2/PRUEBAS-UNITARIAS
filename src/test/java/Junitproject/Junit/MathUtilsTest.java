@@ -10,7 +10,7 @@ public class MathUtilsTest {
     public  void sumarPositivos(){
         int value= mathUtils.add(2,3);
         Assert.assertEquals(5,value);
-        
+
     }
 
     @Test
