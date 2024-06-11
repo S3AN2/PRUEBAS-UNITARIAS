@@ -25,7 +25,7 @@ public class MathUtils {
            throw new IllegalArgumentException("error");
 
         }
-        
+
         return  a/b;
     }
 
