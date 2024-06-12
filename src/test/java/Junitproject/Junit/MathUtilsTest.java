@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MathUtilsTest {
-    MathUtils mathUtils = new MathUtils();
+    private MathUtils mathUtils = new MathUtils();
 
     @Test
     public  void sumarPositivos(){
