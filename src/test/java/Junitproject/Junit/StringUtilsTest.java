@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class StringUtilsTest {
 
-    StringUtils stringUtils = new StringUtils();
+  private   StringUtils stringUtils = new StringUtils();
 @Test
     public  void reverseTest(){
     String resultadoReverse = stringUtils.reverse("angello");
