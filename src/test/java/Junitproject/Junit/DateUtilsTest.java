@@ -10,23 +10,23 @@ public class DateUtilsTest {
 
     @Test
     public  void isLeapYearForMultipleFourTest(){
-        Boolean value= dateUtils.isLeapYear(2424);
-        Assert.assertEquals(true,value);
+        boolean value= dateUtils.isLeapYear(2424);
+        Assert.assertTrue(value);
     }
     @Test
     public  void isnotLeapYearForMultipleFourTest(){
-        Boolean value= dateUtils.isLeapYear(123);
-        Assert.assertEquals(false,value);
+        boolean value= dateUtils.isLeapYear(123);
+        Assert.assertFalse(value);
     }
     @Test
     public  void isnotLeapYearForMultipleOneHundredForNotFourHundredTest(){
-        Boolean value= dateUtils.isLeapYear(2200);
-        Assert.assertEquals(false,value);
+        boolean value= dateUtils.isLeapYear(2200);
+        Assert.assertFalse(value);
     }
     @Test
     public  void isnLeapYearForMultipleOneHundredForFourHundredTest(){
-        Boolean value= dateUtils.isLeapYear(2400);
-        Assert.assertEquals(true,value);
+        boolean value= dateUtils.isLeapYear(2400);
+        Assert.assertTrue(value);
     }
 
     @Test
