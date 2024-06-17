@@ -10,25 +10,43 @@ public class DateUtilsTest {
 
     @Test
     public  void isLeapYearForMultipleFourTest(){
-        Boolean value= dateUtils.isLeapYear(2424);
-        Assert.assertEquals(true,value);
+        boolean value= dateUtils.isLeapYear(2424);
+        Assert.assertTrue(value);
     }
     @Test
     public  void isnotLeapYearForMultipleFourTest(){
-        Boolean value= dateUtils.isLeapYear(123);
-        Assert.assertEquals(false,value);
+        boolean value= dateUtils.isLeapYear(123);
+        Assert.assertFalse(value);
     }
     @Test
     public  void isnotLeapYearForMultipleOneHundredForNotFourHundredTest(){
-        Boolean value= dateUtils.isLeapYear(2200);
-        Assert.assertEquals(false,value);
+        boolean value= dateUtils.isLeapYear(2200);
+        Assert.assertFalse(value);
     }
     @Test
     public  void isnLeapYearForMultipleOneHundredForFourHundredTest(){
-        Boolean value= dateUtils.isLeapYear(2400);
-        Assert.assertEquals(true,value);
+        boolean value= dateUtils.isLeapYear(2400);
+        Assert.assertTrue(value);
     }
 
+<<<<<<< HEAD
 
 
 }
+=======
+    @Test
+    public  void dayBetweenTest(){
+        LocalDate start=LocalDate.of(2023,12,5);
+        LocalDate end=LocalDate.of(2023,12,25);
+        int daysBetweenValue  = dateUtils.daysBetween(start,end);
+        Assert.assertEquals(20,daysBetweenValue);
+    }
+
+    @Test
+    public  void dayOfWeekTest(){
+        LocalDate end=LocalDate.of(2024,6,17);
+        String  daysNameWeek  = dateUtils.dayOfWeek(end);
+        Assert.assertEquals("Monday",daysNameWeek);
+
+}}
+>>>>>>> d11a9d47b52dcc98b7a85f49881e1e6e83ac2f10
